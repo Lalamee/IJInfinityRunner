@@ -302,6 +302,8 @@ GameObject:
   - component: {fileID: 1776679172}
   - component: {fileID: 1776679171}
   - component: {fileID: 1776679173}
+  - component: {fileID: 1776679175}
+  - component: {fileID: 1776679174}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -389,3 +391,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _health: 3
+--- !u!114 &1776679174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776679170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49726e19f3586eb4ab0610e736a9aba8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1776679175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1776679170}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59bdf7b889bfd74c8034ebb3d704977, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _stepSize: 3
+  _speed: 10
+  _maxHeight: 2
+  _minHeight: -2
