@@ -1,27 +1,39 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using Random = UnityEngine.Random;
 
-public class Spawner : MonoBehaviour
+public class Spawner : ObjectPool
 {
-    [SerializeField] private Transform[] _spawnPoints;
     [SerializeField] private GameObject _enemyPrefabs;
+    [SerializeField] private Transform[] _spawnPoints;
     [SerializeField] private float _secondBetweenSpawn;
 
     private float _elpsedTime = 0;
 
+    private void Start()
+    {
+        Initialize(_enemyPrefabs);
+    }
+    
     private void Update()
     {
         _elpsedTime += Time.deltaTime;
 
         if (_elpsedTime >= _secondBetweenSpawn)
         {
-            _elpsedTime = 0;
+            if (TryGetObject(out GameObject enemy))
+            {
+                _elpsedTime = 0;
+                
+                int spawnPointNumber = Random.Range(0, _spawnPoints.Length);
 
-            int spawnPointNumber = Random.Range(0, _spawnPoints.Length);
-            Instantiate(_enemyPrefabs, _spawnPoints[spawnPointNumber].position, Quaternion.identity);
+                SetEnemy(enemy, _spawnPoints[spawnPointNumber].position);
+            }
         }
+    }
+
+    private void SetEnemy(GameObject enemy, Vector3 spawnPoint)
+    {
+        enemy.SetActive(true);
+        enemy.transform.position = spawnPoint;
     }
 }

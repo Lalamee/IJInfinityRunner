@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1c4f3fc7-3ca5-4cd7-8267-2a520477a2a9" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.MyInfinityRunner/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.MyInfinityRunner/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Player/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Enemy/Enemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Level/Spawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Level/Spawner.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +81,7 @@
       <updated>1669642485341</updated>
       <workItem from="1669642505551" duration="594000" />
       <workItem from="1669731848515" duration="3872000" />
+      <workItem from="1670597943654" duration="1455000" />
     </task>
     <servers />
   </component>
